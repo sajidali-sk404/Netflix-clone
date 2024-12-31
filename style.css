@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(bg.jpg);
+    background-position: center center;
+    width: 100%;
+    height: 70vh;
+    border: 2px solid black;
+}
+
+.main .box {
+    width: 100%;
+    height: 71vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%;
+    position: relative;
+}
+
+nav img {
+    width: 100px;
+
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 9px;
+    border: none;
+    border-radius: 4px;
+    margin: 9px 7px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 65px 31% 0;
+}
+
+.flex> :nth-child(1) {
+    font-size: 29px;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+.flex> :nth-child(2) {
+    font-size: 24px;
+    padding: 8px;
+}
+
+.flex> :nth-child(3) {
+    font-size: 16px;
+    padding: 8px;
+}
+
+input {
+    opacity: 0.94;
+    padding: 7px 59px 7px 7px;
+    ;
+    font-weight: 700;
+    background-color: #121010;
+    color: white;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(44 44 44);
+}
+
+@media  screen and (max-width : 1300px) {
+    .main {
+        height: 60vh;
+    }
+    
+.main .box {
+    height: 61vh;
+}
+nav{
+    max-width: 75%;
+}
+.flex {
+    padding: 50px 0;
+}
+    .first {
+        flex-wrap: wrap;
+    }
+    .flex> :nth-child(1) {
+        font-size: 32px;
+    }
+    
+    .flex> :nth-child(2) {
+        font-size: 18px;
+    }
+    
+    .flex> :nth-child(3) {
+        font-size: 18px;
+    }
+    
+    
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    width: 70vw;
+    align-items: center;
+   
+}
+
+.secImg {
+    position: relative;
+
+}
+
+.secImg img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    width: 75%;
+}
+
+.first .para {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.first .secpara {
+    font-size: 24px;
+    font-weight: 400;
+}
+@media screen and (max-width: 1300px) {
+    
+    .first {
+        margin: 18px  auto; 
+    }.secImg img {
+        width: 70vw;
+        
+    }
+    
+    .secImg video {
+        top: 20%;
+        right: 13%;
+        width: 75%;
+    }
+    .first .para {
+        font-size: 26px;
+        
+    }
+    .first .secpara {
+        font-size: 14px;
+        
+    }
+}
+
+.faq {
+    color: white;
+}
+
+.faq h2 {
+
+    text-align: center;
+}
+
+.faq .box {
+    width: 50%;
+    background-color: #242424;
+    margin: 5px auto;
+    padding: 16px;
+    cursor: pointer;
+}
+.box :hover {
+   
+    background-color: #7e3434;
+}
+
+.center {
+    text-align: center;
+}
+footer {
+    color: white;
+    margin: auto;
+    padding: 5px 20%;;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 12px;
+}
+.footer a{
+    color: white;
+}
+@media  screen and (max-width : 1300px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+}
